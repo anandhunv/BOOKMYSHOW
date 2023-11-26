@@ -1,0 +1,43 @@
+.container {
+    padding: 9rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    object-fit: cover;
+    width: 100%;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider-nav a {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    margin: 0 5px;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
