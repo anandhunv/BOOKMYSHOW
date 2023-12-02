@@ -199,11 +199,117 @@ body {
   align-items: center;
   width: 100%;
 }
+.section{
+  background-color: #f84464;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  display: flex;
+  
+ 
 
-.slideshow {
+}
+.slider{
+  width: 100%;
+  height: auto;
+ 
+ 
+  overflow: hidden;
+
+
+}
+
+.slide{
+  width: 500%;
+  height: 200px;
+  display: flex;
+}
+.slide input{
+  display: none;
+}
+.st{
+  width: 20%;
+  transition: 2s;
+}
+.st img{
+  width: 100%;
+  height: auto;
+
+}
+.nav-m{
+  position: absolute;
+  width: 600px;
+  margin-top: 80px;
+  margin-left: 550px;
+
+  display: flex;
+}
+.m-btn{
+  transform: scale(0.8);
+ 
+  border: 1px solid  #a39e9e;
+  background-color: #a39e9e;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+
+}
+
+.m-btn:not(:last-child){
+  margin-right: 30px;
+}
+.m-btn:hover{
+  background-color: rgb(255, 255, 255);
+}
+#radio1:checked ~.first{
+  margin-left: 0;
+}
+#radio2:checked ~.first{
+  margin-left: -20%;
+}
+#radio3:checked ~.first{
+  margin-left: -40%;
+}
+#radio4:checked ~.first{
+  margin-left: -60%;
+}
+
+
+/* .nav-auto{ 
+  position: absolute;
+  width: 800px;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+
+ } */
+
+/* .nav-auto div{ 
+  border: 2px solid aqua;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+ }  
+.nav-auto div:not(:last-child){
+  margin-right: 30px;
+  justify-content: center;
+
+}
+#radio1:checked ~.nav-auto .a-b1{
+  background-color: blue;
+}
+#radio2:checked ~.nav-auto .a-b2{
+  background-color: blue;
+}
+#radio3:checked ~.nav-auto .a-b3{
+  background-color: blue;
+}*/
+
+/* .slideshow { 
   display: flex;
   width: 100%;
-  max-width: 100%; /* Adjust the maximum width as needed */
+  max-width: 100%; /* Adjust the maximum width as needed 
   overflow: hidden;
 }
 
@@ -215,9 +321,9 @@ body {
 
 .slideshow img {
   animation: slideshow 40s linear infinite; /* Total duration = 3 images * 3 seconds per image */
-}
+/* } */
 
-@keyframes slideshow {
+/* @keyframes slideshow { 
   0%,
   100% {
     transform: translateX(0);
@@ -231,7 +337,7 @@ body {
   100% {
     transform: translateX(0);
   }
-}
+/* } */
 .recom{
 
     margin-top: 20px;
